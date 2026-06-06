@@ -122,8 +122,8 @@ function! start_screen#show(blocks)
     " Apply syntax highlighting
     syntax clear
     highlight default StartScreenHeader cterm=bold gui=bold
-    highlight default StartScreenShortcut cterm=italic gui=italic
-    highlight default StartScreenCommand cterm=italic gui=italic
+    highlight default link StartScreenShortcut Statement
+    highlight default link StartScreenCommand Statement
 
     " Match headers
     for l:header in l:headers
