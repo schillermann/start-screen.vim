@@ -32,6 +32,12 @@ g:start_screen_blocks = [
         { shortcut: 'g', description: 'Git Status', command: ':G' },
     ]}
 ]
+
+# Start screen is shown when Vim starts.
+augroup StartGroup
+    autocmd!
+    autocmd VimEnter * StartScreen
+augroup END
 ```
 
 ### Configuration Options
